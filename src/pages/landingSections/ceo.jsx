@@ -2,11 +2,12 @@ import React from "react";
 
 import ceoImage from "../../assets/images/ceo.jpeg";
 import consultant from "../../assets/images/consultant.jpeg";
+import AHworker from "../../assets/images/AHworker.jpeg"
 
 const Ceo = () => {
   return (
-    <div className="w-full bg-gray-100 py-20 flex px-24 justify-between items-start">
-      <div className="w-max  flex items-start">
+    <div className="w-full bg-gray-100 py-20 flex flex-wrap px-24 justify-between items-start">
+      <div className="flex items-start" style={{width: "48%", marginBottom: 30}}>
         <div className="rounded-sm mr-8">
           <div
             className="w-36 h-36 bg-center bg-no-repeat bg-cover rounded-sm"
@@ -29,11 +30,30 @@ const Ceo = () => {
         </div>
       </div>
 
-      <div className="w-max  flex items-start">
+      <div className="flex items-start" style={{width: "48%", marginBottom: 30}}>
         <div className="rounded-sm mr-8">
           <div
             className="w-36 h-36 bg-center bg-no-repeat bg-cover rounded-sm"
             style={{ backgroundImage: `url(${consultant})` }}
+          ></div>
+        </div>
+        <div>
+          <h3 className="font-bold text-2xl text-gray-800">
+            Matty denis Larsen
+          </h3>
+          <span className="font-normal text-lg text-gray-600 mt-2 flex mb-5">
+            Manager of the project consultant and research ( architecture /
+            interior designs )
+          </span>
+          <p className="font-light text-md text-gray-900 w-96"></p>
+        </div>
+      </div>
+      
+      <div className="flex items-start" style={{width: "48%", marginBottom: 30}}>
+        <div className="rounded-sm mr-8">
+          <div
+            className="w-36 h-36 bg-center bg-no-repeat bg-cover rounded-sm"
+            style={{ backgroundImage: `url(${AHworker})` }}
           ></div>
         </div>
         <div>
